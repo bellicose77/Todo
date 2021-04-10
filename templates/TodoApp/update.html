@@ -1,0 +1,8 @@
+<h3>Update task</h3>
+<a class="btn btn-info" href="{% url 'home' %}">Home </a>
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input class="btn btn-info" type="submit" name="Update task">
+</form>
